@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BaioStream</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">🎵 BaioStream</div>
+
+      <nav>
+        <a href="#musicas">Músicas</a>
+        <a href="#videos">Vídeos</a>
+      </nav>
+    </header>
+
+    <section class="banner">
+      <h1>Minha Plataforma Multimídia, com videos e musicas gratuitas</h1>
+
+      <p>Site criado para atividade prática de HTML e CSS.</p>
+    </section>
+
+    <div class="container">
+      <section id="musicas">
+        <h2>🎧 Músicas</h2>
+
+        <div class="cards">
+          <div class="card">
+            <img src="imagens/misterio.jpg" alt="Música 1" />
+
+            <h3>Mc Kevin - Mistério</h3>
+
+            <p>
+              Música com uma vibe intensa e misteriosa, trazendo o estilo marcante do MC Kevin.
+            </p>
+
+            <audio controls autoplay loop>
+              <source src="Audio/Mc Kevin - Mistério  (Video Clipe) DJ Murillo & LT no Beat - Mc Kevin Oficial (youtube).mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+
+          <div class="card">
+            <img src="imagens/terapia.jpg" alt="Música 2" />
+
+            <h3>MC Kevin - Terapia</h3>
+
+            <p>
+              Música com letra emocional e reflexiva, mostrando um lado mais pessoal do artista.
+            </p>
+
+            <audio controls>
+              <source src="Audio/MC Kevin - Terapia  (Web Clipe) Prod. DJ Murillo & LTnoBeat - Mc Kevin Oficial (youtube).mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+
+          <div class="card">
+            <img src="Imagens/pula catraca.jpg" alt="Música 3" />
+
+            <h3>MC Kevin - Pula Catraca</h3>
+
+            <p>
+              Música animada e contagiante, com batida forte e estilo descontraído característico do MC Kevin.
+            </p>
+
+            <audio controls>
+              <source src="Audio/Mc Kevin - Pula Catraca ( Web Clipe Sete Sete Records ) DJ NENE - Mc Kevin Oficial (youtube).mp3" type="audio/mpeg" />
+            </audio>
+          </div>
+        </div>
+      </section>
+
+      <section id="videos">
+        <h2>🎬 Vídeos</h2>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Mistério</h3>
+
+            <p>
+              Videoclipe com clima misterioso e batida marcante, trazendo o estilo único do MC Kevin.
+            </p>
+
+            <video controls poster="Imagens/misterio.jpg">
+              <source src="Videos/Mc Kevin - Mistério  (Video Clipe) DJ Murillo & LT no Beat - Mc Kevin Oficial (720p, h264, youtube).mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div class="card">
+            <h3>Terapia</h3>
+
+            <p>
+              Música com letra mais reflexiva e emocional, mostrando um lado mais pessoal do artista.
+            </p>
+
+            <video controls poster="Imagens/terapia.jpg">
+              <source src="Videos/MC Kevin - Terapia  (Web Clipe) Prod. DJ Murillo & LTnoBeat - Mc Kevin Oficial (720p, h264, youtube).mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <div class="card">
+            <h3>Pula Catraca</h3>
+
+            <p>
+              Videoclipe animado e descontraído, com energia alta e ritmo contagiante.
+            </p>
+
+            <video controls poster="Imagens/pula catraca.jpg">
+              <source src="Videos/Mc Kevin - Pula Catraca ( Web Clipe Sete Sete Records ) DJ NENE - Mc Kevin Oficial (720p, h264, youtube).mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>Desenvolvido por Miguel</p>
+    </footer>
+  </body>
+</html>

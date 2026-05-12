@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #0b1120;
+  font-family: Arial, sans-serif;
+  color: #e5e7eb;
+}
+
+header{
+  background-color: #111827;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #1f2937;
+}
+
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+  color: #5454d2;
+}
+
+nav{
+  display: flex;
+  gap: 15px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #d1d5db;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background-color: #1f2937;
+}
+
+nav a:hover{
+  background-color: #22c55e;
+  color: black;
+}
+
+.banner{
+  width: 92%;
+  max-width: 1300px;
+  margin: 35px auto;
+  background-color: #111827;
+  border-radius: 25px;
+  padding: 60px;
+  border: 1px solid #1f2937;
+}
+
+.banner h1{
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #22c55e;
+}
+
+.banner p{
+  color: #9ca3af;
+  font-size: 18px;
+  max-width: 700px;
+  line-height: 28px;
+}
+
+.container{
+  width: 92%;
+  max-width: 1300px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+}
+
+section h2{
+  margin-bottom: 25px;
+  font-size: 32px;
+  color: white;
+}
+
+.cards{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 250px 1fr 350px;
+  align-items: center;
+  gap: 30px;
+  background-color: #111827;
+  border-radius: 20px;
+  border: 1px solid #1f2937;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.card:hover{
+  background-color: #18233d;
+  transform: scale(1.01);
+}
+
+.card-content{
+  width: 100%;
+}
+
+.card img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.card h3{
+  font-size: 28px;
+  color: #22c55e;
+  margin-bottom: 15px;
+}
+
+.card p{
+  color: #9ca3af;
+  line-height: 26px;
+}
+
+audio{
+  width: 100%;
+}
+
+video{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+footer{
+  background-color: #111827;
+  text-align: center;
+  padding: 25px;
+  border-top: 2px solid #1f2937;
+  color: #9ca3af;
+}
+
+@media (max-width: 900px){
+
+  .card{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .card img,
+  video{
+    margin: auto;
+  }
+
+  header{
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .banner{
+    padding: 40px 25px;
+  }
+
+  .banner h1{
+    font-size: 35px;
+  }
+
+}
